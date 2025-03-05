@@ -1,0 +1,87 @@
+.card {
+    width: 300px;
+    min-height: 350px;
+    background: #f5f5f5;
+    padding: 2rem 1.5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+   }
+   
+   .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, opacity .2s ease;
+   }
+   
+   /*Image*/
+   .card-avatar {
+    --size: 180px;
+    background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transition: transform .2s ease;
+    margin-bottom: 1rem;
+   }
+   
+   
+   /*Card footer*/
+   .card-social {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100% ;
+    opacity: 0 ;
+    transition: transform .2s ease, opacity .2s ease !important;
+   }
+   
+   .card-social__item {
+    list-style: none;
+   }
+   
+   .card-social__item svg {
+    display: block;
+    height: 30px;
+    width: 30px;
+    fill: #1863a8;
+    cursor: pointer;
+    transition: fill 0.3s ease ,transform 0.2s ease;
+   }
+   
+   /*Text*/
+   .card-title {
+    color: #333;
+    font-size: 1.5em !important;
+    font-weight: bold;
+    line-height: 2rem;
+   }
+   
+   .card-subtitle {
+    color: #859ba8 !important;
+    font-size: 1em !important;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    box-shadow: 0 8px 50px #23232333;
+   }
+   
+   .card:hover .card-info {
+    transform: translateY(-5%);
+   }
+   
+   .card:hover .card-social {
+    transform: translateY(60%);
+    opacity: 1;
+   }
+   
+   .card-social__item svg:hover {
+    fill: #2f0dc9;
+    transform: scale(1.1);
+    border-bottom: 2px solid salmon;
+   }
+   
+   .card-avatar:hover {
+    transform: scale(1.1);
+   }

@@ -1,0 +1,490 @@
+.e-card {
+    margin: 0;
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+    position: relative;
+    width: 100vw;
+    height: 80vh; /* Set height to 80vh for hero section */
+    border-radius: 0;
+    overflow: hidden;
+  }
+  
+  .wave {
+    position: absolute;
+    width: 7vw;
+    height: 14vh;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+  }
+
+  .wave-2 {
+    position: absolute;
+    width: 40vw;
+    height: 100vh;
+    opacity: 0.6;
+    right: 0;
+    top: 0;
+    background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+  }
+
+  .wave-3 {
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+    opacity: 0.6;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+  }
+  
+  .wave-4 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+  }
+
+
+  
+
+  
+  .playing .wave, .wave-2 ,.wave-3 {
+    border-radius: 40%;
+    animation: wave 3000ms infinite linear;
+  }
+  
+  .wave, .wave-2 ,.wave-3 {
+    border-radius: 40%;
+    animation: wave 55s infinite linear;
+  }
+  
+  .playing .wave:nth-child(2) {
+    animation-duration: 12000ms;
+  }
+  
+  .wave:nth-child(2) {
+    animation-duration: 50s;
+  }
+  
+  .playing .wave:nth-child(3) {
+    animation-duration: 5000ms;
+  }
+  
+  .wave:nth-child(3) {
+    animation-duration: 45s;
+  }
+  
+
+
+  /* wave2  */
+
+  .playing .wave-2:nth-child(2) {
+    animation-duration: 11000ms;
+  }
+  
+  .wave-2:nth-child(2) {
+    animation-duration: 50s;
+  }
+  
+  .playing .wave-2:nth-child(3) {
+    animation-duration: 10000ms;
+  }
+  
+  .wave-2:nth-child(3) {
+    animation-duration: 45s;
+  }
+
+  /* wave2  */
+
+
+
+  /* .wave-3 */
+
+
+
+  .playing .wave-3:nth-child(2) {
+    animation-duration: 10000ms;
+  }
+  
+  .wave-3:nth-child(2) {
+    animation-duration: 50s;
+  }
+  
+  .playing .wave-3:nth-child(3) {
+    animation-duration: 10000ms;
+  }
+  
+  .wave-3:nth-child(3) {
+    animation-duration: 45s;
+  }
+
+
+  /* .wave-3 */
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+
+
+  
+  
+  /* btn css  */
+
+
+
+  .custom-button-portfolio {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #183153;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    padding: 0px;
+  }
+  
+  .custom-button-portfolio:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background:#ADD8E6;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+  }
+  
+  .custom-button-portfolio:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  
+  .custom-button-portfolio span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-button-portfolio:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0.95);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* btn css  */
+
+
+  /* icon css  */
+  .icon {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    animation: jumpUpDown 2s ease-in-out infinite;
+  }
+  
+  @keyframes jumpUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust the height of the jump */
+    }
+  }
+  
+  
+  
+  /* icon css  */
+
+
+  .section-title{
+    display: inline-block;
+    font-size: 36px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: rgb(68, 65, 65);
+    border-top:2px solid salmon ;
+    border-bottom:2px solid rgb(43, 91, 221) ;
+  }
+
+
+  /* about us  */
+
+  
+  ::selection {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+ 
+  
+  .panel {
+    background: radial-gradient(circle, white 0%, #d5d5d5 100%);
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.55);
+  }
+  
+ 
+  /* about us  */
+
+
+  .clients{
+    background: linear-gradient(180deg, rgba(8, 77, 126, 0) 0%, rgba(8, 77, 126, 0.42) 100%),rgba(89, 219, 219, 0.24);
+
+  }
+
+.projects{
+  border-radius: 50px;
+  box-shadow: rgba(14, 197, 230, 0.17) 0px -23px 25px 0px inset, rgba(12, 62, 155, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(112, 164, 233, 0.09) 0px 16px 8px, rgba(31, 34, 187, 0.09) 0px 32px 16px;
+  overflow: hidden;
+  background-color: #131c25e5;
+
+}
+
+/* brands  */
+.brands {
+width: 100%;
+height: 100%;
+/* Add your background pattern here */
+background: lightblue;
+background: radial-gradient(
+    circle,
+    rgb(170, 162, 162),
+    #333 30%,
+    rgba(88, 84, 84, 0.226) 0%
+  ),
+  radial-gradient(
+    circle at 40px 40px,
+    rgb(233, 228, 228),
+    #333 30%,
+    rgba(88, 84, 84, 0) 0%
+  ),
+  radial-gradient(
+    circle at 600px 200px,
+    rgb(233, 228, 228),
+    #333 10%,
+    rgba(88, 84, 84, 0) 0%
+  ),
+  radial-gradient(
+    circle at 800px 100px,
+    rgb(233, 228, 228),
+    #333 10%,
+    rgba(88, 84, 84, 0) 0%
+  ),
+  radial-gradient(
+    circle at 700px 500px,
+    rgb(233, 228, 228),
+    #333 2%,
+    rgba(88, 84, 84, 0.123) 0%
+  ),
+  radial-gradient(
+    circle at 200px 400px,
+    rgb(233, 228, 228),
+    #333 1%,
+    rgba(88, 84, 84, 0) 0%
+  ),
+  radial-gradient(
+    circle at 300px 700px,
+    rgb(233, 228, 228),
+    #333 15%,
+    rgba(88, 84, 84, 0) 0%
+  ),
+  radial-gradient(
+    circle at 900px 500px,
+    rgb(233, 228, 228),
+    #333 20%,
+    rgba(88, 84, 84, 0) 0%
+  ),
+  radial-gradient(
+    circle at 650px 400px,
+    rgb(233, 228, 228),
+    #333 10%,
+    rgba(88, 84, 84, 0) 0%
+  ),
+  radial-gradient(
+    circle at 600px 600px,
+    rgb(233, 228, 228),
+    #333 1%,
+    rgba(88, 84, 84, 0.959) 0%
+  );
+}
+
+
+
+/* brands  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* scrool buttons  */
+/* Cool share button made by: csozi | Website: english.csozi.hu*/
+
+.buttons-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left:10px ;
+  display: grid;
+  place-items: center;
+  height: fit-content;
+  width: fit-content;
+  transition: 0.3s;
+  border-radius: 50%;
+  z-index: 99999999999999;
+}
+
+.buttons-scroll:hover { 
+  padding: 50px;
+}
+
+.buttons-scroll:hover .button {
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.main-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  border: none;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  border-radius: 50%;
+  transition: 0.2s;
+  z-index: 100000000000000 !important;
+}
+
+.button-scroll {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  border: none;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 12px rgba(202, 202, 202, 0), -5px -5px 12px rgba(255, 255, 255, 0);
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.discord-button:hover {
+  background: skyblue;
+  color:"white"
+}
+
+.buttons-scroll:hover .discord-button {
+  translate: 70px 0px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.twitter-button:hover {
+  background: #1CA1F1;
+}
+
+.buttons-scroll:hover .twitter-button {
+  translate: 47px -47px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.reddit-button:hover {
+  background: orange;
+}
+
+.buttons-scroll:hover .reddit-button {
+  translate: 0px -70px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.messenger-button:hover {
+  background: #0093FF;
+}
+
+.buttons-scroll:hover .messenger-button {
+  translate: -47px -47px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.pinterest-button:hover {
+  background:gold;
+}
+
+.buttons-scroll:hover .pinterest-button {
+  translate: -70px 0px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.instagram-button:hover {
+  background: #F914AF;
+}
+
+.buttons-scroll:hover .instagram-button {
+  translate: -47px 47px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.snapchat-button:hover {
+  background: #FFFC00;
+}
+
+.buttons-scroll:hover .snapchat-button {
+  translate: 0px 70px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.whatsapp-button:hover {
+  background: #25D366;
+}
+
+.buttons-scroll:hover .whatsapp-button {
+  translate: 47px 47px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+/* scrool buttons  */

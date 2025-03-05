@@ -1,0 +1,253 @@
+/* css for explor button   */
+.custom-button {
+    cursor: pointer !important;
+    position: relative !important;
+    padding: 10px 30px !important;
+    font-size: 18px !important;
+    color: rgb(255, 255, 255) !important;
+    border: 2px solid rgb(255, 255, 255) !important;
+    border-radius: 34px !important;
+    background-color: transparent !important;
+    font-weight: 600 !important;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1) !important;
+    overflow: hidden !important;
+  }
+  
+  .custom-button::before {
+    content: '' !important;
+    position: absolute !important;
+    inset: 0 !important;
+    margin: auto !important;
+    width: 50px;
+    height: 50px !important;
+    border-radius: inherit !important;
+    scale: 0 !important;
+    z-index: -1 !important;
+    background-color: rgb(250, 250, 250) !important;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1) !important;
+  }
+  
+  .custom-button:hover::before {
+    scale: 3 !important;
+  }
+  
+  .custom-button:hover {
+    color: #212121 !important;
+    scale: 1.1 !important;
+    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.4) !important;
+  }
+  
+  .custom-button:active {
+    scale: 1 !important;
+  }
+  
+/* css for explor button   */
+
+
+
+/* logo rotate */
+@keyframes spin-smooth {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-smooth {
+  animation: spin-smooth 2s linear infinite;
+}
+
+
+.left-logo{
+  position: absolute;
+  top: 4;
+  left: 0;
+}
+
+.right-logo{
+  position: absolute;
+  top: 4;
+  right: 0;
+}
+/* logo rotate */
+
+/* consultation  */
+@keyframes bounce-smooth {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-bounce-smooth-c {
+  animation: bounce-smooth 10s ease-in-out infinite;
+  position: absolute;
+  top: 4;
+  right: 0;
+  margin-right: 10%;
+}
+
+.animate-bounce-smooth-d {
+  animation: bounce-smooth 10s ease-in-out infinite;
+  position: absolute;
+  top: 4;
+  left: 0;
+  margin-left: 10%;
+}
+/* consultation  */
+
+
+.animate-bounce-smooth-s {
+  animation: bounce-smooth 10s ease-in-out infinite;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: 45%;
+
+}
+
+
+
+
+
+/* css for form  */
+ /* cs for form  */
+ .form {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.form-title {
+  font-size: 28px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.form-title::before,.form-title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
+}
+
+.form-title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.form-title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.input:focus{
+  border: 2px solid #2ecc71 !important;
+}
+
+
+.form label  .input:focus + span {
+  color: green;
+  
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: rgb(83, 138, 138) !important;
+  padding: 10px;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 16px;
+  transform: 0.3s ease;
+  transition: all 0.3s ease-in;
+}
+
+.submit:hover {
+  background-color: rgb(56, 90, 194) !important;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+    
+  }
+}
+
+
+.input{
+  padding-left: 80px !important;
+  margin-top: 3px;
+}
+
+/* cs for from  */

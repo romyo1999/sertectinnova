@@ -1,0 +1,24 @@
+{"description":"et voici une description du logiciel STRONGNET :
+Le déploiement des politiques de sécurité se fait manuellement par la saisie des règles d'une
+politique l’une après l’autre ou alternativement à travers l'insertion d'un fichier contenant
+l'ensemble des règles au sein du pare feu ce qui prend plus de temps et augmente ainsi la
+probabilité de commettre des erreurs. En plus un administrateur réseau aura des problèmes
+pour mettre à jour une politique de grande taille dans un délai très petit au sein d'un
+firewall distant. Pour pallier à tous ces problèmes, il faut penser à un mécanisme
+d'automatisation de l’opération de déploiement. Dans ce projet, nous utiliserons une stratégie
+efficace qui pourrait éviter des failles de sécurité. Ensuite, nous fournissons et nous
+implémenterons un algorithme correct, efficace et sûr pour les classes d’édition de
+politiques. Notre étude théorique montre que cet algorithme est très rapide et peut être
+utilisé en toute sûreté, même pour le déploiement de politiques dont la taille est très
+importante. Il a pour objectif la création d’une application sure évitant à l’administrateur
+réseau de perdre trop de temps et d’énergie dans le déploiement manuel des politiques de
+sécurité. Cet outil convertira l’algorithme décrit ci-dessus afin de faire le déploiement de
+politiques de grande taille automatiquement, efficacement et rapidement. Ce logiciel sera
+installé sur n'importe quel serveur informatique et sera dans un premier lieu tester sur un pare-feu
+logiciel. Dans une deuxième phase, l’application va être étendue pour assurer une communication
+avec des pare-feu physiques. Notre application sera aussi l’objet de publications et de conférences
+scientifiques dans le futur afin qu’elle soit vérifiée dans les grandes échéances scientifiques
+internationales. Notre travail est une innovation de produit qui permettra de répondre à un
+service existant qui est le déploiement manuel d‘une politique de sécurité mais avec une
+nouvelle manière rendue possible par la technologie représentée par l’automatisation des
+mises à jours du firewall."}
