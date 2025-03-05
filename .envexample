@@ -1,5 +1,5 @@
-VITE_BACKEND_URL=http://localhost:8000
+VITE_BACKEND_URL=http://sertect-innova.ct.ws
 
-VITE_DOMIN_URL=http://localhost:3000
+VITE_DOMIN_URL=http://sertect-innova.ct.ws
 
-VITE_IMAGE_URL=http://localhost:8000/storage/images/
+VITE_IMAGE_URL=http://sertect-innova.ct.ws/storage/images/
